@@ -2,9 +2,9 @@
      1                       ICC,       IG,          ILG,        IL1,
      2                       IL2,     TCAN,         TBAR,   RMATCTEM,
      3                      SORT, NOL2PFTS,           IC,
-C    -------------- INPUTS ABOVE THIS LINE, OUTPUTS BELOW ----------
+C     -------------- INPUTS ABOVE THIS LINE, OUTPUTS BELOW ----------
      4                      RMSVEG, RMRVEG,     ROOTTEMP, !)
-C    ---------------LEAF MAINTENANCE RESP.(f.m. YUAN) --------------
+C     ---------------LEAF MAINTENANCE RESP.(f.m. YUAN) --------------
      5                      AILVEG,   NRUB,        RMLVEG)
 C
 C
@@ -63,7 +63,7 @@ C
       LOGICAL CONSQ10
 
 C++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ (f.m.YUAN)
-      REAL  AILVEG(ILG,ICC),  NRUB(ILG,ICC),      
+      REAL  AILVEG(ILG,ICC),  NRUB(ILG,ICC),
      1      RMLVEG(ILG,ICC),   BSRTLEAF(KK)
 C++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ (f.m.YUAN)
 C
@@ -85,20 +85,20 @@ C     RESPIRATION RATES OF ROOT ARE HIGHER BECAUSE THEY CONTAIN
 C     BOTH WOOD (COARSE ROOTS) AND FINE ROOTS.
 C
 !     &              0.0365, 0.0365, 0.0000,
-     DATA BSRTSTEM/0.0900, 0.0550, 0.0000, 
+      DATA BSRTSTEM/0.0900, 0.0550, 0.0000,
      &             0.0600, 0.0335, 0.0300, 
      &             0.0365, 0.0365, 0.0000, 
      &             0.0000, 0.0000, 0.0000/     
 
 !     &              0.1600, 0.1600, 0.0000,
-     DATA BSRTROOT/0.5000, 0.2850, 0.0000,   
+      DATA BSRTROOT/0.5000, 0.2850, 0.0000,
      &             0.6500, 0.2250, 0.0550, 
      &             0.1600, 0.1600, 0.0000, 
      &             0.1000, 0.1000, 0.0000/  
 C
 C++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ (f.m.YUAN)
-C	BASE RESPIRATION RATES FOR GREEN LEAF (kgC/yr/<gNrub/m2>)
-!      DATA BSRTLEAF/0.0030, 0.0030, 0.0000,  ! IF need TO BE IGNORED, SET THEM TO ZEROS
+C	  BASE RESPIRATION RATES FOR GREEN LEAF (kgC/yr/<gNrub/m2>)
+      DATA BSRTLEAF/0.0030, 0.0030, 0.0000,  ! IF need TO BE IGNORED, SET THEM TO ZEROS
      &             0.3030, 0.3030, 0.0030,
      &             0.0001, 0.0001, 0.0000,
      &             0.0001, 0.0030, 0.0000/

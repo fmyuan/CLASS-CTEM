@@ -63,8 +63,8 @@ C      DATA BSRATELT/0.4605/
 C
 C     SOIL C RESPIRATION RATES AT 15 C IN KG C/KG C.YEAR
 C      DATA BSRATESC/0.05258/
-C    DATA BSRATESC/0.0660/ 	           !f.Yuan: site-specific modeling
-     DATA BSRATESC/0.02258/          !ref: Vivek, 2013
+C      DATA BSRATESC/0.0660/ 	           !f.Yuan: site-specific modeling
+      DATA BSRATESC/0.02258/           !ref: Vivek, 2013
 C
 C     SET THE FOLLOWING SWITCH TO .TRUE. FOR USING CONSTANT TEMPERATURE
 C     INDEPEDENT Q10 AS SPECIFIED BELOW

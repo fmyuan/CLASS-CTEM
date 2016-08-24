@@ -6,7 +6,7 @@
 C    ---------------------- INPUTS ABOVE, OUTPUTS BELOW ---------------
      5                        RC,  CO2I1, CO2I2, AN_VEG, RML_VEG,       ! )
 C     +++++++++++++++++ NITROGEN COMPONENTS FOR CTEM ++++++++++++++++++
-     6                    CTEMN,XNUP_VEG, NRUB0, VCMAX0,                 !)
+     6                    CTEMN,XNUP_VEG, NRUB0, VCMAX0,                ! )
 C     ----------------------------------------------------HSuo testing BELOW 
      7  		 GPP_VEG,JE_VEG,JC_VEG,JS_VEG,TCAN_HS, !NEP_VEG,RE_VEG,
      8           IPAR_HS,fPAR_HS,SM_HS,TGA_HS,CO2I_VEG,KO_HS,KC_HS,
@@ -184,23 +184,21 @@ C     +++++++++++++++++ NITROGEN COMPONENTS FOR CTEM ++++++++++++++++++\
 C
       LOGICAL CTEMN, VCNONOFF
       REAL XNUP_VEG(ILG,ICC),     NRUB0(ILG,ICC),      VCMAX0(ILG,ICC)
-	REAL TRUBX(KK),				TRUBN(KK),			 TRUBO(KK)
-	REAL VCMAXN0(KK)
+	  REAL TRUBX(KK),				TRUBN(KK),			 TRUBO(KK)
+	  REAL VCMAXN0(KK)
 C
-	REAL TX,	TN,		TOPT,	FSEAS
-	REAL VMXR
+      REAL TX,  TN,     TOPT,   FSEAS
+	  REAL VMXR
 C
 C     +++++++++++++++++ NITROGEN COMPONENTS FOR CTEM ++++++++++++++++++/
 
-
-C    -------------------------------------------------------HSuo testing\
       REAL JE_VEG(ILG,ICC),JC_VEG(ILG,ICC),JS_VEG(ILG,ICC),
-	1     IPAR_HS(ILG),FPAR_VEG(ILG,ICC),VMAXC_VEG(ILG,ICC),
-	2     GPP_VEG(ILG,ICC),  !NEP_VEG(ILG,ICC),RE_VEG(ILG,ICC),
+     1     IPAR_HS(ILG),FPAR_VEG(ILG,ICC),VMAXC_VEG(ILG,ICC),
+     2     GPP_VEG(ILG,ICC),  !NEP_VEG(ILG,ICC),RE_VEG(ILG,ICC),
      3 SM_HS(ILG,ICC),VM_VEG(ILG,ICC),VMUNS_VEG(ILG,ICC),FSEAS_HS(ILG),
      4     VMUNS1_VEG(ILG,ICC),VMUNS2_VEG(ILG,ICC),VMUNS3_VEG(ILG,ICC),
-     5 CO2I_VEG(ILG,ICC),TGA_HS(ILG),KC_HS(ILG),KO_HS(ILG),TCAN_HS(ILG),fPAR_HS(ILG)
-C    -------------------------------------------------------HSuo testing/
+     5 CO2I_VEG(ILG,ICC),TGA_HS(ILG),KC_HS(ILG),KO_HS(ILG),TCAN_HS(ILG),
+     6 fPAR_HS(ILG)
 
 
 C     -----------------------------------------------------------------
@@ -597,7 +595,7 @@ C     SET MIN. AND MAX. VALUES FOR STOMATAL CONDUCTANCE. WE MAKE SURE
 C     THAT MAX. STOMATAL RESISTANCE IS AROUND 5000 S/M AND MIN. STOMATAL
 C     RESISTANCE IS 51 S/M.
 C
-    TCAN = TA  !HSuo
+      TCAN = TA  !HSuo
       DO 360 J = 1, ICC
         DO 370 I = IL1, IL2
           GCMIN(I,J)=0.0002 * (TFREZ/TCAN(I)) * (1./0.0224) *  
@@ -767,7 +765,7 @@ C
 C
 C       TEMPERATURE RESPONSE FUNCTION OF RUBISCO ACTIVITY
 			TN        = TRUBN(SORT(M))
-			TX        = TRUBX(SORT(M))
+            TX        = TRUBX(SORT(M))
 			TOPT      = TRUBO(SORT(M))
               IF (TCAN(I).LE.TN .OR. TCAN(I).GE.TX) THEN
                   FSEAS = 0.0
@@ -1547,3 +1545,4 @@ C----------------------------------------------------------HSuo testing
 C
       RETURN
       END
+

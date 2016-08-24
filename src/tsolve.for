@@ -181,7 +181,7 @@ C
                   TZEROL(I)=TZERO(I)
                   RESIDL(I)=RESID(I)
                   TZERO(I)=(TZEROL(I)*RESIDO(I)-TZEROO(I)*RESIDL(I))/
-                    (RESIDO(I)-RESIDL(I)+0.00001)  !HSuo Mar2013
+     1               (RESIDO(I)-RESIDL(I)+0.00001)  !HSuo Mar2013
                   IF(TZERO(I).LT.0.0) TZERO(I)=TZEROL(I)-1.0
                   IF(TZERO(I).GT.373.16) TZERO(I)=TZEROL(I)+1.0
                   TSTEP(I)=TZERO(I)-TZEROL(I)

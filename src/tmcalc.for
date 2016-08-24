@@ -223,8 +223,8 @@ C
                       HCP(I,J)=HCPW*THLIQ(I,J)+HCPICE*THICE(I,J)+
      1                           HCPS(I,J)*(1.-THPOR(I,J))
                       TBAR (I,J)=0.0                                                   
-                      TBAR (I,J)=-HADD/(HCP(I,J)*DELZW(I,J)+HCPSND* &
-                      (DELZZ(I,J)-DELZW(I,J)))
+                      TBAR (I,J)=-HADD/(HCP(I,J)*DELZW(I,J)+HCPSND*
+     1                           (DELZZ(I,J)-DELZW(I,J)))
                   ELSE                                                                
                       HMFG(I,J)=HMFG(I,J)-FCT(I)*(THLIQ(I,J)-THLMIN)*
      1                          CLHMLT*RHOW*DELZW(I,J)/DELT

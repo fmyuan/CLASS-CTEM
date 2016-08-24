@@ -137,7 +137,7 @@ C     MAX. LOSS RATE FOR DROUGHT STRESS FOR ALL 9 PFTs, (1/DAY)
       DATA DRLSRTMX/0.0025, 0.005, 0.000,
      &              0.005, 0.005, 0.025,
      &              0.005, 0.005, 0.000,
-!     &              0.050, 0.050, 0.000/ 
+     &              0.050, 0.050, 0.000/
 C
 C     PARAMETER DETERMINING HOW FAST SOIL DRYNESS CAUSES LEAVES TO FALL
       DATA DRGTA/3.0, 3.0, 0.0,		        

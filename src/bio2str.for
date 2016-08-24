@@ -165,10 +165,10 @@ C       DATA MXRTDPTH/3.00, 3.00, 0.00,
 C     &               3.75, 3.25, 3.00,
 C     &               2.00, 2.00, 0.00,
 C     &               0.60, 0.60, 0.00/
-       DATA MXRTDPTH/3.00, 3.00, 0.00,   !Vivek modified
-      &               5.00, 5.00, 3.00, 
-      &               2.00, 2.00, 0.00, 
-      &              1.00, 1.00, 0.00/       
+      DATA MXRTDPTH/3.00, 3.00, 0.00,  !Vivek modified
+     &              5.00, 5.00, 3.00,
+     &              2.00, 2.00, 0.00,
+     &              1.00, 1.00, 0.00/
 C
 C     VISIBLE AND NEAR IR ALBEDOS OF THE 9 CTEM PFTs
 C

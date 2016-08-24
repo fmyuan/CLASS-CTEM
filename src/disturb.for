@@ -414,7 +414,8 @@ C     MULTIPLY THE BTERM, MTERM, AND THE LTERM TO FIND PROBABILITY OF
 C     FIRE. ALSO GENERATE A RANDOM NUMBER TO SEE IF WE ARE GOING TO
 C     START A FIRE OR NOT.
 C
-      CALL TIME(CTIME)        !Returns the current time as set within the system
+      !CALL TIME(CTIME)        !Returns the current time as set within the system
+      CTIME = TIME()
       ISEED=100000000*CTIME
       CALL SRAND (ISEED)
       DO 420 I = IL1, IL2

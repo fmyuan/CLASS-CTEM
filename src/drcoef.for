@@ -139,7 +139,7 @@ C
 
             WSPEED=VA(I)
             AS1=10.0*ZMLN*(ZOM(I)-1.0)
-                AS2=5.00/(2.0-8.53*RIB(I)*EXP(-3.35*RIB(I))+0.05*RIB(I)**2)
+            AS2=5.00/(2.0-8.53*RIB(I)*EXP(-3.35*RIB(I))+0.05*RIB(I)**2)
             AS2=AS2*PR*SQRT(-ZMLN)/2.
             AS3=27./(8.*PR*PR)
 
