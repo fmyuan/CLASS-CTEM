@@ -971,8 +971,8 @@ C     INITIALIZATION FILE. THIS IS TO DIVIDE NEEDLE LEAF AND BROAD LEAF
 C     INTO DCD AND EVG, AND CROPS AND GRASSES INTO C3 AND C4.
 C
       DO 113 J = 1, ICAN
-        CSUM(I,J) = 0.0
-        ICOUNT(I) = 0
+        CSUM(:,J) = 0.0
+        ICOUNT(:) = 0
 
         DO 114 I = IL1, IL2  !1,1
           K1 = (J-1)*L2MAX + 1

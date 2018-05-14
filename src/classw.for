@@ -17,7 +17,8 @@
      G                  TSNOCS, TSNOGS, ZPLIMC, ZPLIMG, ZPLMCS, ZPLMGS,
      H                  SAND,   CLAY,   ORGM,   DRN,    PCPR,TA,DELZ,
      I                  DELZW,  ZBOTW,  ILG,IL1,IL2,JL,IC,IG,IGP1,IGP2,
-     J                  NLANDCS,NLANDGS,NLANDC, NLANDG, TRANS          )  !HSuo Feb2013
+C     J                  NLANDCS,NLANDGS,NLANDC, NLANDG, TRANS          )  !HSuo Feb2013
+     J                  NLANDCS,NLANDGS,NLANDC, NLANDG)
 C                                                                        
 C     * JUN 20/97 - D.VERSEGHY. CLASS - VERSION 2.7.
 C     *                         CHANGES RELATED TO VARIABLE SOIL DEPTH
